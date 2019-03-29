@@ -1,12 +1,17 @@
+/**
+ * Filters array of objects by certain date property, between two dates.
+ * @param {string} dateProperty Name of property that is type of date string
+ * @param {date} startDate Starting date
+ * @param {date} endDate Ending date
+ * @returns {array}  
+ */
+
 utilities.filter('betweenDates', function () {
     return function (items, dateProperty, startDate, endDate) {
 
         if (startDate == null || endDate == undefined || endDate == null || endDate == undefined) {
             return items;
         }
-
-        var startDateObj = new Date(startDate);
-        var endDateObj = new Date(endDate);
 
         var filtered = [];
 
@@ -15,9 +20,9 @@ utilities.filter('betweenDates', function () {
 
             if (item[dateProperty] !== null) {
 
-                var itemDateObj = new Date(formatDate(item[dateProperty]));
+                var itemDateObj = new Date(item[dateProperty]);
 
-                if (itemDateObj >= startDateObj && itemDateObj <= endDateObj) {
+                if (itemDateObj >= startDate && itemDateObj <= endDate) {
                     filtered.push(item);
                 }
             }
@@ -25,9 +30,3 @@ utilities.filter('betweenDates', function () {
         return filtered;
     }
 });
-
-
-function formatDate(date) {
-    if (date != null)
-        return new Date(parseInt(date.substr(6)));
-}
