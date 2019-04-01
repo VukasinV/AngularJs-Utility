@@ -18,7 +18,7 @@ utilities.filter('betweenDates', function () {
         for (var i = 0; i < items.length; i++) {
             var item = items[i];
 
-            if (item[dateProperty] !== null) {
+            if (item[dateProperty] !== null && item[dateProperty] !== undefined) {
 
                 var itemDateObj = new Date(item[dateProperty]);
 
