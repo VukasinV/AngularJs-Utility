@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="app/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/services/logger.service.js"></script>
@@ -11,6 +11,9 @@
 
 <body ng-app="app" ng-controller="IndexController as $ctrl">
     <p>{{$ctrl.test}}</p>
+    <div>
+        <ng-include src="'app/templates/modalTemplate.html'"></ng-include>
+    </div>
 </body>
 
 </html>
