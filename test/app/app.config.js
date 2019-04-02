@@ -1,23 +1,26 @@
 (function () {
     'use strict'
 
-    angular
-        .module('app')
-        .config(function ($stateProvider) {
+    // angular
+    //     .module('app')
+    //     .config(state);
 
-            var aboutState = {
-                name: 'about',
-                url: '/about',
-                templateUrl: 'app/about/about.html'
-            };
+    // state.$inject = ['$stateProvider'];
+    // function state($stateProvider) {
 
-            var homeState = {
-                name: 'home',
-                url: '/',
-                template: ''
-            }
+    //     var aboutState = {
+    //         name: 'about',
+    //         url: '/about',
+    //         templateUrl: 'app/about/about.html'
+    //     };
 
-            $stateProvider.state(aboutState);
-            $stateProvider.state(homeState);
-        });
+    //     var homeState = {
+    //         name: 'home',
+    //         url: '/',
+    //         template: ''
+    //     }
+
+    //     $stateProvider.state(aboutState);
+    //     $stateProvider.state(homeState);
+    // }
 })();
