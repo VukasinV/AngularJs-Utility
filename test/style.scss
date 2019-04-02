@@ -2,7 +2,8 @@ $color-red: #e3eaa4;
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background: $color-red;
     color: black;
+    text-align: center;
 }
