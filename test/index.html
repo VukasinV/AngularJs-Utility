@@ -17,20 +17,31 @@
     <script src="app/app.routes.js"></script>
     <script src="app/app.config.js"></script>
     <script src="app/services/logger.service.js"></script>
-    <script src="app/home/index.controller.js"></script>
+    <script src="app/app.controller.js"></script>
+    <script src="app/layout/header/header.component.js"></script>
+    <script src="app/layout/footer/footer.component.js"></script>
 
     <base href="/test/">
     <title> AngularJs Utility test</title>
 </head>
 
-<body ng-app="app" ng-controller="IndexController as $ctrl">
-    <p>{{$ctrl.test}}</p>
-    <div>
-        <ng-include src="'app/templates/modalTemplate.html'"></ng-include>
+<body ng-app="app" ng-controller="AppController as $ctrl" class="holy-grail">
+    <header></header>
+    <div class="body">
+        <div class="content">
+            <p>Ovo je Content!</p>
+            <p>{{$ctrl.test}}</p>
+            <div>
+                <ng-include src="'app/templates/modalTemplate.html'"></ng-include>
+            </div>
+            <a ui-sref="home">Home</a>
+            <a ui-sref="about">About</a>
+            <ui-view></ui-view>
+        </div>
+        <div class="nav">Ovo je Nav!</div>
+        <div class="aside">Ovo je Aside!</div>
     </div>
-    <a ui-sref="home">Home</a>
-    <a ui-sref="about">About</a>
-    <ui-view></ui-view>
+    <footer></footer>
 </body>
 
 </html>

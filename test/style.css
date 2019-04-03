@@ -1,13 +1,99 @@
-body {
+/* #layout */
+.holy-grail {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
   background: #e3eaa4;
   color: black;
   text-align: center;
+}
+
+/* #header */
+.header {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+/* #navigation */
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+  background-color: #111;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  border: 1px solid;
+  background: #98d899;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid;
+  background: yellow;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: gray;
+}
+
+.nav {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12em;
+          flex: 0 0 12em;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  background: #d898bd;
+}
+
+.aside {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12em;
+          flex: 0 0 12em;
+  background: #99b1d8;
 }
 /*# sourceMappingURL=style.css.map */
