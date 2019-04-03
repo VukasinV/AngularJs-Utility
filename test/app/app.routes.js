@@ -12,19 +12,35 @@
     function getStates() {
         return [
             {
+                state: 'home',
+                config: {
+                    abstract: false,
+                    component: 'home',
+                    url: '/home'
+                }
+            },
+            {
+                state: 'blog',
+                config: {
+                    abstract: false,
+                    component: 'blog',
+                    url: '/blog'
+                }
+            },
+            {
                 state: 'about',
                 config: {
                     abstract: false,
-                    templateUrl: 'app/about/about.html',
+                    component: 'about',
                     url: '/about'
                 }
             },
             {
-                state: 'home',
+                state: 'contact',
                 config: {
                     abstract: false,
-                    template: '',
-                    url: '/'
+                    component: 'contact',
+                    url: '/contact'
                 }
             }
         ];

@@ -38,6 +38,9 @@
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .navigation li {
@@ -55,6 +58,11 @@
 /* Change the link color to #111 (black) on hover */
 .navigation li a:hover {
   background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
 .footer {
