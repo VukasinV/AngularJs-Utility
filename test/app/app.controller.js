@@ -3,7 +3,7 @@
 
     angular
         .module('app')
-        .controller('IndexController', IndexController);
+        .controller('AppController', IndexController);
 
     IndexController.$inject = ['logger'];
 
