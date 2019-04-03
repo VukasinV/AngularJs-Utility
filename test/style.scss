@@ -1,7 +1,11 @@
 $background-color: #e3eaa4;
 $color-orange: orange;
-$color-green: green;
-
+$footer: #98d899;
+$aside: #99b1d8;
+$nav: #d898bd;
+$navigation-color: #6ba3ff;
+$navigation-item-hover:#bad4ff;
+$navigation-item-activated: #2376ff;
 /* #layout */
 
 .holy-grail {
@@ -20,16 +24,42 @@ $color-green: green;
     text-align: center;
 }
 
+/* #header */
 .header {
     flex: none;
-    border: 1px solid;
-    background: $color-orange;
+}
+
+/* #navigation */
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+    background-color: #111;
 }
 
 .footer {
     flex: none;
     border: 1px solid;
-    background: $color-green;
+    background: $footer;
 }
 
 .content {
@@ -46,10 +76,10 @@ $color-green: green;
 .nav {
     flex: 0 0 12em;
     order: -1;
-    background: red;
+    background: $nav;
 }
 
 .aside {
     flex: 0 0 12em;
-    background: blue;
+    background: $aside;
 }
