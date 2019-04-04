@@ -19,7 +19,7 @@
       -ms-flex: 1;
           flex: 1;
   height: 100%;
-  background: #e3eaa4;
+  background: white;
   color: black;
   text-align: center;
 }
@@ -96,6 +96,7 @@
       -ms-flex-order: -1;
           order: -1;
   background: #d898bd;
+  visibility: hidden;
 }
 
 .aside {
@@ -103,5 +104,10 @@
       -ms-flex: 0 0 12em;
           flex: 0 0 12em;
   background: #99b1d8;
+  visibility: hidden;
+}
+
+.jumbotron-custom {
+  margin: 4px;
 }
 /*# sourceMappingURL=style.css.map */

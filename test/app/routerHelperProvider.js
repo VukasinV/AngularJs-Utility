@@ -8,6 +8,8 @@
     routerHelperProvider.$inject = ['$locationProvider', '$stateProvider', '$urlRouterProvider']
     function routerHelperProvider($locationProvider, $stateProvider, $urlRouterProvider) {
 
+        $locationProvider.hashPrefix(['']);
+
         this.$get = RouterHelper;
 
         RouterHelper.$inject = ['$state'];

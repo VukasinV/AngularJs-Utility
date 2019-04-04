@@ -1,4 +1,4 @@
-$background-color: #e3eaa4;
+$body-color: white;
 $color-orange: orange;
 $footer: #98d899;
 $aside: #99b1d8;
@@ -19,7 +19,7 @@ $navigation-item-activated: #2376ff;
     display: flex;
     flex: 1;
     height: 100%;
-    background: $background-color;
+    background: $body-color;
     color: black;
     text-align: center;
 }
@@ -84,9 +84,15 @@ $navigation-item-activated: #2376ff;
     flex: 0 0 12em;
     order: -1;
     background: $nav;
+    visibility: hidden;
 }
 
 .aside {
     flex: 0 0 12em;
     background: $aside;
+     visibility: hidden;
+}
+
+.jumbotron-custom {
+    margin: 4px;
 }
