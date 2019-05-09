@@ -1,3 +1,3 @@
 var required = [];
 
-var utilities = angular.module("utilites", required);
+angular.module('utility', required);
